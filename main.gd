@@ -31,12 +31,15 @@ func jogar(posicao: int, botao: Button):
 
 	var resultado = checar_vitoria()
 	if resultado == "X":
+		vitorias_jeffim += 1
 		jogo_acabou = true
 		label_status.text = "Jeffim venceu...infelizmente"
 	elif resultado == "O":
+		vitorias_capeta += 1
 		jogo_acabou = true
 		label_status.text = "O Capeta comeu a alma do Jeffim..."
 	elif resultado == "empate":
+		empates +=1
 		jogo_acabou = true
 		label_status.text = "Decidiram no par ou ímpar"
 	else:
