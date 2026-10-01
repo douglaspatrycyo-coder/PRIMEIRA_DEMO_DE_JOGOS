@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://b8t0luuq2ua0x"]
+
+[ext_resource type="Script" uid="uid://bwx06bgtmpmkb" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://dqud2qh1ihv5o" path="res://7a9822c2d28545924c15f56577eedf0d.jpg" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://c4itnt407kdyv" path="res://1000208971-removebg-preview.png" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://ddxbhnt04ekd4" path="res://1000208974-removebg-preview.png" id="4_1bvp3"]
+[ext_resource type="AudioStream" uid="uid://wjk3njp6tvle" path="res://SOM DA CAATINGA À NOITE.mp3" id="5_lquwl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xm2m"]
+bg_color = Color(0.31704855, 0.66043913, 0.6992381, 1)
+
+[node name="main" type="Node2D" unique_id=2032653083]
+script = ExtResource("1_ig7tw")
+
+[node name="musica" type="AudioStreamPlayer2D" parent="." unique_id=1496957395]
+stream = ExtResource("5_lquwl")
+autoplay = true
+parameters/looping = true
+
+[node name="sertaonoite" type="TextureRect" parent="." unique_id=1064262509]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -117.0
+offset_right = 1142.0
+offset_bottom = 641.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_0xm2m")
+
+[node name="Jeffim" type="TextureRect" parent="." unique_id=1518612291]
+offset_left = 874.0
+offset_top = 215.0
+offset_right = 1148.0
+offset_bottom = 642.0
+texture = ExtResource("3_h2yge")
+expand_mode = 3
+
+[node name="Capeta" type="TextureRect" parent="." unique_id=1955417634]
+offset_left = -4.0
+offset_top = 246.0
+offset_right = 367.0
+offset_bottom = 640.0
+texture = ExtResource("4_1bvp3")
+
+[node name="tabuleiro" type="Control" parent="." unique_id=742067271]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 416.0
+offset_top = 164.0
+offset_right = 416.0
+offset_bottom = 164.0
+
+[node name="casa1" type="Button" parent="tabuleiro" unique_id=77902694]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 100.0
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_0xm2m")
+
+[node name="casa2" type="Button" parent="tabuleiro" unique_id=1727319949]
+layout_mode = 0
+offset_left = 110.0
+offset_right = 210.0
+offset_bottom = 100.0
+
+[node name="casa3" type="Button" parent="tabuleiro" unique_id=1300531988]
+layout_mode = 0
+offset_left = 220.0
+offset_right = 320.0
+offset_bottom = 100.0
+
+[node name="casa4" type="Button" parent="tabuleiro" unique_id=242011798]
+layout_mode = 0
+offset_top = 110.0
+offset_right = 100.0
+offset_bottom = 210.0
+
+[node name="casa5" type="Button" parent="tabuleiro" unique_id=877250207]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 110.0
+offset_right = 210.0
+offset_bottom = 210.0
+
+[node name="casa6" type="Button" parent="tabuleiro" unique_id=1559437700]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 110.0
+offset_right = 320.0
+offset_bottom = 210.0
+
+[node name="casa7" type="Button" parent="tabuleiro" unique_id=1422502797]
+layout_mode = 0
+offset_top = 220.0
+offset_right = 100.0
+offset_bottom = 320.0
+
+[node name="casa8" type="Button" parent="tabuleiro" unique_id=2102322961]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 220.0
+offset_right = 210.0
+offset_bottom = 320.0
+
+[node name="casa9" type="Button" parent="tabuleiro" unique_id=475006693]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 220.0
+offset_right = 320.0
+offset_bottom = 320.0
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1363579487]
+
+[node name="Label" type="Label" parent="UI" unique_id=1319340254]
+offset_left = 515.0
+offset_top = 124.0
+offset_right = 626.0
+offset_bottom = 147.0
+text = "Vez de Jeffim"
+
+[node name="BotãoReiniciar" type="Button" parent="UI" unique_id=492799170]
+offset_left = 525.0
+offset_top = 506.0
+offset_right = 639.0
+offset_bottom = 537.0
+text = "Jogar de novo"
+
+[node name="placar" type="Label" parent="UI" unique_id=453683416]
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.018000001
+offset_left = 122.0
+offset_top = 21.0
+offset_right = 233.68
+offset_bottom = 48.336

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wjk3njp6tvle"
+path="res://.godot/imported/SOM DA CAATINGA À NOITE.mp3-4571f2304f0ecbe66d3cf33edf57f453.mp3str"
+
+[deps]
+
+source_file="res://SOM DA CAATINGA À NOITE.mp3"
+dest_files=["res://.godot/imported/SOM DA CAATINGA À NOITE.mp3-4571f2304f0ecbe66d3cf33edf57f453.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
